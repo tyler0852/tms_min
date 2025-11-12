@@ -11,3 +11,4 @@ sqlx = { version = "0.7", features = [
     "sqlite",         # SQLite database support ONLY
     "macros"          # Compile-time checked queries
 ]}
+log = "0.4"
