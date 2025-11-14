@@ -61,8 +61,8 @@ async fn main() -> Result<(), std::io::Error> {
         .at("/readheavy", get(readheavy))
         .data(pool);  // Make database available to handlers
     
-    println!("Server running at http://localhost:3000");
-    Server::new(TcpListener::bind("0.0.0.0:3000"))
+    println!("Server running at http://localhost:3001");
+    Server::new(TcpListener::bind("0.0.0.0:3001"))
         .run(app)
         .await
 }
