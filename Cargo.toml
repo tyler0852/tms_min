@@ -8,8 +8,7 @@ poem = "3"
 tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
 sqlx = { version = "0.7", features = [
     "runtime-tokio",  # Use Tokio as async runtime
-    "sqlite",         # SQLite database support ONLY
-    "macros"          # Compile-time checked queries
+    "sqlite"         # SQLite database support ONLY
 ]}
 log = "0.4"
 rand = "0.8"

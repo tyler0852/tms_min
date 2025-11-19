@@ -8,7 +8,7 @@ use log::{info, error};
 const SQLITE_PROTOCOL: &str = "sqlite://";
 const DB_PATH: &str = "/Users/tyler/tacc_research/tms_min/tms_min.db";
 const POOL_MIN_CONNECTIONS: u32 = 2;
-const POOL_MAX_CONNECTIONS: u32 = 12;
+const POOL_MAX_CONNECTIONS: u32 = 8;
 
 pub async fn init_db() -> SqlitePool {
     let url = format!("{}{}", SQLITE_PROTOCOL, DB_PATH);
